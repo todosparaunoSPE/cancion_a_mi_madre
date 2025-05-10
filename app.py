@@ -70,14 +70,14 @@ st.markdown("""
 
 # Reproductor de audio
 st.markdown("## 🎧 Escucha la canción")
-st.markdown("### Versión Introductoria")
+st.markdown("### Versión a")
 try:
     with open("Mello_Madre_de_Amor_a.mp3", "rb") as file:
         st.audio(file.read(), format="audio/mp3")
 except FileNotFoundError:
     st.warning("⚠️ No se encontró el archivo 'mello_intro.mp3'. Asegúrate de que esté en la misma carpeta.")
 
-st.markdown("### Versión Completa")
+st.markdown("### Versión b")
 try:
     with open("Mello_Madre_de_Amor_b.mp3", "rb") as file:
         st.audio(file.read(), format="audio/mp3")
